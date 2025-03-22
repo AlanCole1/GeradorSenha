@@ -1,6 +1,5 @@
 import React from 'react';
 import { Text, StyleSheet, Pressable  } from 'react-native';
-import Ionicons from '@expo/vector-icons/Ionicons';
 
 export function SenhaItem({data, removeSenha}){
     return(
@@ -8,7 +7,7 @@ export function SenhaItem({data, removeSenha}){
             <Text style={{color: '#FFF'}}>
                 {data}
             </Text>
-            <Ionicons name='eye' size={16} style={styles.icon}/>
+          
         </Pressable>
     );
 }
@@ -23,9 +22,5 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent:'space-between'
-    },
-    icon:{
-        color:'gray',
-        
     }
 })
